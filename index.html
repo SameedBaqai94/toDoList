@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/f5a9a78168.js"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="src/index.css">
+        <title>To Do List</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Movie List</h1>
+            <form class="form">
+                <div>
+                    <input type="text" name="add" id="add" placeholder="Search Movie" />
+                    <button type="button" class="btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button type="button" class="btn" id="addBtn"><i
+                            class="fa-solid fa-plus"></i></button>
+                </div>
+            </form>
+        </div>
+       
+        <div class="main-container" id="container">
+        </div>
+        <div class="addBook">
+            <div class="formPopup" id="popupForm">
+                <form>
+                    <h2>Add Movie</h2>
+                    <label for="movie">Movie Name: </label>
+                    <input type="text" name="movie" id="movieName"/>
+                    <label for="dateReleased">Movie Name: </label>
+                    <input type="text" name="dateReleased" id="dateReleased" />
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="button" class="btn cancel" id="close">Close</button>
+                </form>
+
+            </div>
+        </div>
+        <script src="src/index.js"></script>
+    </body>
+</html>
