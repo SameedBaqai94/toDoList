@@ -14,29 +14,33 @@
             <h1>Movie List</h1>
             <form class="form">
                 <div>
-                    <input type="text" name="add" id="add" placeholder="Search Movie" />
-                    <button type="button" class="btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <input type="text" name="search" id="search"
+                        placeholder="Search Movie" />
                     <button type="button" class="btn" id="addBtn"><i
                             class="fa-solid fa-plus"></i></button>
                 </div>
             </form>
         </div>
-       
+
         <div class="main-container" id="container">
         </div>
-        <div class="addBook">
-            <div class="formPopup" id="popupForm">
-                <form>
-                    <h2>Add Movie</h2>
-                    <label for="movie">Movie Name: </label>
-                    <input type="text" name="movie" id="movieName"/>
-                    <label for="dateReleased">Movie Name: </label>
-                    <input type="text" name="dateReleased" id="dateReleased" />
-                    <button type="submit" class="btn">Submit</button>
-                    <button type="button" class="btn cancel" id="close">Close</button>
-                </form>
+        <div class="addBook" id="addBook">
+            <form action="" class="form-container">
+                <h1>Login</h1>
 
-            </div>
+                <label for="movie"><b>Movie</b></label>
+                <input type="text" placeholder="Enter Movie Name" id="movie"
+                    name="movie"
+                    required>
+
+                <label for="date"><b>Date Released</b></label>
+                <input type="date" placeholder="Enter Date" id="date"
+                    name="date"
+                    required>
+
+                <button type="button" class="btn" id="submit">Submit</button>
+                <button type="button" class="btn cancel" id="close">Close</button>
+            </form>
         </div>
         <script src="src/index.js"></script>
     </body>
